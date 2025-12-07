@@ -73,10 +73,3 @@ Visit: `http://localhost:8000`
 3. Commit changes  
 4. Open a Pull Request  
 
-## 📄 License
-
-Open‑source. Add your preferred license here.
-
----
-
-README auto‑generated via ChatGPT.
