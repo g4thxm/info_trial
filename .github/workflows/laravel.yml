@@ -32,6 +32,11 @@ jobs:
     - name: Directory Permissions
       run: chmod -R 777 storage bootstrap/cache
 
+    - name: Fake Vite manifest
+      run: |
+        mkdir -p public/build
+        echo '{}' > public/build/manifest.json
+
     - name: Create Database
       run: |
         mkdir -p database
@@ -41,5 +46,4 @@ jobs:
       env:
         DB_CONNECTION: sqlite
         DB_DATABASE: database/database.sqlite
-        VITE_DISABLED: true 
       run: php artisan test
